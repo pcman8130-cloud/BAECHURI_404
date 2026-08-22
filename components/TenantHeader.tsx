@@ -16,11 +16,11 @@ export function TenantHeader({
       <div className="flex items-center gap-2 min-w-0">
         <span className="text-2xl shrink-0">🥬</span>
         <div className="min-w-0">
-          <p className="text-xs font-semibold text-green-700 leading-tight truncate">
+          <p className="text-xs font-semibold leading-tight truncate text-[color:var(--w-primary)]">
             {t(lang, "brand")}
           </p>
           {title && (
-            <h1 className="text-lg font-extrabold leading-tight truncate">
+            <h1 className="text-lg font-extrabold leading-tight truncate text-[color:var(--w-label-strong)]">
               {title}
             </h1>
           )}
