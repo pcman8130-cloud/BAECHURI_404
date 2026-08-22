@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { BrandMark } from "@/components/BrandMark";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -35,6 +36,9 @@ export default function LoginPage() {
   return (
     <main className="mx-auto max-w-sm px-4 py-16 min-h-screen flex flex-col justify-center">
       <div className="mb-8 text-center">
+        <div className="flex justify-center mb-3">
+          <BrandMark size={56} />
+        </div>
         <p className="text-sm font-semibold text-[color:var(--w-primary)]">배추리 매니저</p>
         <h1 className="text-2xl font-extrabold mt-1 text-[color:var(--w-label-strong)]">집주인 로그인</h1>
       </div>

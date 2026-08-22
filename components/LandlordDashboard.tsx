@@ -16,6 +16,7 @@ import { FaqManager } from "@/components/FaqManager";
 import { NoticeManager } from "@/components/NoticeManager";
 import { InquiryManager } from "@/components/InquiryManager";
 import { LogoutButton } from "@/components/LogoutButton";
+import { BrandMark } from "@/components/BrandMark";
 import {
   SendIcon,
   MegaphoneIcon,
@@ -98,7 +99,7 @@ export function LandlordDashboard({
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-8">
         <header className="mb-6 flex flex-wrap items-start justify-between gap-3">
           <div className="flex items-start gap-2">
-            <span className="text-2xl shrink-0 mt-0.5">🥬</span>
+            <BrandMark size={32} className="shrink-0 mt-0.5" />
             <div>
               <p className="text-sm font-semibold text-[color:var(--w-label-normal)]">
                 {t("ko", "brand")}

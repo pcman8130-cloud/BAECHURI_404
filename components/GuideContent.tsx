@@ -6,6 +6,7 @@ import { useLanguage } from "@/lib/language-context";
 import { useBuilding } from "@/lib/building-context";
 import { LANGS, LANG_LABEL, LANG_FLAG } from "@/lib/types";
 import { t } from "@/lib/i18n";
+import { BrandMark } from "@/components/BrandMark";
 
 export function GuideContent() {
   const router = useRouter();
@@ -22,7 +23,9 @@ export function GuideContent() {
   return (
     <main className="mx-auto max-w-md px-4 py-12 min-h-screen flex flex-col justify-center">
       <div className="text-center mb-8">
-        <p className="text-4xl mb-3">🥬</p>
+        <div className="flex justify-center mb-3">
+          <BrandMark size={56} />
+        </div>
         <h1 className="text-xl font-extrabold">{t(lang, "chooseLanguageTitle")}</h1>
         <p className="text-sm mt-2 leading-relaxed text-[color:var(--w-label-alt)]">
           {t(lang, "chooseLanguageSubtitle")}

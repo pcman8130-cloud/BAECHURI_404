@@ -3,6 +3,7 @@
 import { Lang } from "@/lib/types";
 import { t } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { BrandMark } from "@/components/BrandMark";
 
 export function TenantHeader({
   lang,
@@ -14,7 +15,7 @@ export function TenantHeader({
   return (
     <header className="mb-6 flex items-center justify-between gap-3">
       <div className="flex items-center gap-2 min-w-0">
-        <span className="text-2xl shrink-0">🥬</span>
+        <BrandMark size={28} className="shrink-0" />
         <div className="min-w-0">
           <p className="text-xs font-semibold leading-tight truncate text-[color:var(--w-primary)]">
             {t(lang, "brand")}
